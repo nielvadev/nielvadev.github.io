@@ -11,7 +11,6 @@ let lastScrollY = 0;
 window.addEventListener('scroll', () => {
     let currentScrollY = window.scrollY;
     let position = photo.getBoundingClientRect().top;
-    console.log(position);
 
     // Animation for the header banner
     if (currentScrollY > 1) {
