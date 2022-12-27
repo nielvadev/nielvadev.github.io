@@ -7,6 +7,7 @@
     <link rel="icon" href="./assets/favicon.ico">
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="animations.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,500;0,800;1,300;1,500&display=swap" rel="stylesheet">
@@ -60,18 +61,20 @@
             <div class="perfil-wrapper">
                 <h6 class="typing-perfil">👋Hola, mi nombre es:</h6>
                 <h6 class="title">Juan Daniel Valencia</h6>
-                <h6 class="sub-title">Desarrollador FrontEnd</h6>
-                <p class="text-perfil">
+                <h6 class="sub-title" id="start">Desarrollador FrontEnd</h6>
+                <p class="text-perfil" id="start">
                     Estudiante de último semestre de Tecnología en Desarrollo de Software en la Universidad Tecnológica de Pereira, amante al desarrollo web, con conocimientos en CorelDraw.
                 </p>
-                <h3 align="left">Lenguajes:</h3>
+                <div class="skills">
+
+                    <h3 align="left">Lenguajes:</h3>
                     <p align="left"> 
                         <img class="tec-logo" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript"/>
                         <img class="tec-logo" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php"/>
                         <img class="tec-logo" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp"/> 
                     </p>
-
-                <h3 align="left">FrontEnd:</h3>
+                    
+                    <h3 align="left">FrontEnd:</h3>
                     <p align="left"> 
                         <img class="tec-logo" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5"/>
                         <img class="tec-logo" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3"/>
@@ -80,35 +83,36 @@
                         <img class="tec-logo" src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> 
                         <img class="tec-logo" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap"/>
                     </p>
-
-                <h3 align="left">BackEnd:</h3>
-                <p align="left"> 
-                    <img class="tec-logo" src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs"/>
-                </p>
-
-                <h3 align="left">Bases de datos:</h3>
-                <p align="left"> 
-                    <img class="tec-logo" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb"/>
-                    <img class="tec-logo" src="https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg" alt="mariadb"/>
-                    <img class="tec-logo" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql"/>
-                    <img class="tec-logo" src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite"/>
-                </p>
-
-                <h3 align="left">Tecnologías:</h3>
-                <p align="left"> 
-                    <img class="tec-logo" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet"/>
-                    <img class="tec-logo" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git"/>
-                    <img class="tec-logo" src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/xamarin.svg" alt="xamarin"/> 
-                </p>            
+                    
+                    <h3 align="left">BackEnd:</h3>
+                    <p align="left"> 
+                        <img class="tec-logo" src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs"/>
+                    </p>
+                    
+                    <h3 align="left">Bases de datos:</h3>
+                    <p align="left"> 
+                        <img class="tec-logo" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb"/>
+                        <img class="tec-logo" src="https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg" alt="mariadb"/>
+                        <img class="tec-logo" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql"/>
+                        <img class="tec-logo" src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite"/>
+                    </p>
+                    
+                    <h3 align="left">Tecnologías:</h3>
+                    <p align="left"> 
+                        <img class="tec-logo" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet"/>
+                        <img class="tec-logo" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git"/>
+                        <img class="tec-logo" src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/xamarin.svg" alt="xamarin"/> 
+                    </p>            
+                </div>
             </div>        
         </section>
-
-        <div class="spacing" />
+            
+        <div class="spacing"></div>
 
         <section class="desarrollos" id="desarrollos">
             <h6 class="typing-desarrollos">He desarrollado:</h6>
             <div class="desarrollos-wrapper">
-                <div class="project">
+                <div class="project-nodisplay" id="finanzapp">
                     <h6 class="sub-title">FinanzApp</h6>
                         <a target="_blank" href="https://finanzapp.000webhostapp.com/index.html">
                             <img class="project-gif" src="assets/FinanzApp-Brave-2022-12-22-17-29-18.gif">
@@ -127,7 +131,7 @@
                 
             </div>
             <div class="desarrollos-wrapper">
-                <div class="project">
+                <div class="project-nodisplay" id="crmclientes">
                     <h6 class="sub-title">CRM-clientes</h6>
                         <a>
                             <img class="project-gif" src="assets/CRM-clientes.gif">
@@ -145,7 +149,7 @@
             </div>
             <div class="jump"></div>
             <div class="desarrollos-wrapper">
-                <div class="project">
+                <div class="project-nodisplay" id="veterinapp">
                     <h6 class="sub-title">VeterinApp</h6>
                         <a target="_blank" href="https://github.com/nielvadev/CitasVeterinaria">
                             <img class="project-gif" src="assets/VeterinApp.gif">
@@ -163,7 +167,7 @@
             </div>
             <div class="jump"></div>
             <div class="desarrollos-wrapper movil-wrapper">
-                <div class="project" id="movil">
+                <div class="project-nodisplay" id="movil">
                     <h6 class="sub-title">AgendApp</h6>
                         <a target="_blank" href="https://github.com/nielvadev/AgendApp">
                             <img class="project-gif movil-gif" src="assets/AgendApp.gif" >
@@ -185,7 +189,7 @@
 
 
 
-        <section class="contacto" id="contacto">
+        <section class="contacto-nodisplay" id="contacto">
             <h6 class="typing-contacto">Puedes contactarme:</h6>
             <div class="contacto-wrapper">
                 <div class="contacto-container">      

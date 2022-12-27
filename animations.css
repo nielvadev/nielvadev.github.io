@@ -1,0 +1,68 @@
+.title {
+    animation: appear 5s;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translate(-10%);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#start {
+    animation:start-appear 9s;
+}
+
+@keyframes start-appear {
+    0% {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.skills {
+    animation: skills-appear 5s;
+}
+
+@keyframes skills-appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.project {
+    animation: projects-appear 5s;
+}
+
+@keyframes projects-appear {
+    0% {
+        opacity: 0;
+        transform: translateX(10%);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.contacto {
+    animation: contacto-appear 8s;
+}
+
+@keyframes contacto-appear {
+    0% {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+    100% {
+        opacity: 1;
+    }
+}
