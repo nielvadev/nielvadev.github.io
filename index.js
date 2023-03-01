@@ -4,12 +4,14 @@ const finanzapp = document.getElementById('finanzapp');
 const crmclientes = document.getElementById('crmclientes');
 const veterinapp = document.getElementById('veterinapp');
 const movil = document.getElementById('movil');
+const pipes = document.getElementById('pipes');
 const contacto = document.getElementById('contacto');
 
 let lastScrollY = 0;
 
 window.addEventListener('scroll', () => {
     let currentScrollY = window.scrollY;
+    // console.log(currentScrollY);
     let position = photo.getBoundingClientRect().top;
 
     // Animation for the header banner
@@ -35,13 +37,13 @@ window.addEventListener('scroll', () => {
     }
 
     // Animation for the projects -> crmclientes
-    if (position < -1700) {
-        crmclientes.classList.remove('project-nodisplay');
+    if (position < -1450) {
+        crmclientes.classList.remove('project-nodisplay'); 
         crmclientes.classList.add('project');
     }
 
     // Animation for the projects -> veterinapp
-    if (position < -2300) {
+    if (position < -1800) {
         veterinapp.classList.remove('project-nodisplay');
         veterinapp.classList.add('project');
     }
@@ -52,8 +54,14 @@ window.addEventListener('scroll', () => {
         movil.classList.add('project');
     }
 
+    // Animation for the projects -> pipes
+    if (position < -3350) {
+        pipes.classList.remove('project-nodisplay');
+        pipes.classList.add('project');
+    }
+    
     // Animation for the contacto
-    if (position < -3320) {
+    if (position < -4080) {
         contacto.classList.remove('contacto-nodisplay');
         contacto.classList.add('contacto');
     }
